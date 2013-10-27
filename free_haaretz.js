@@ -1,5 +1,5 @@
 chrome.webRequest.onBeforeSendHeaders.addListener(
-  function(details) {
+  function (details) {
     for (var i = 0; i < details.requestHeaders.length; ++i) {
       if (details.requestHeaders[i].name === 'User-Agent') {
         details.requestHeaders[i].value = 'Googlebot/2.1 (+http://www.googlebot.com/bot.html)';
@@ -9,14 +9,27 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     return {requestHeaders: details.requestHeaders};
   },
   {
-    urls: ["http://*.haaretz.co.il/*"]
+    urls: ['http://*.haaretz.co.il/*']
   },
   [
-    "blocking",
-    "requestHeaders"
-  ]);
+    'blocking',
+    'requestHeaders'
+  ]
+);
 
-chrome.contentSettings.javascript.set({
-  primaryPattern: "http://*.haaretz.co.il/*",
-  setting: "block"
-})
+chrome.webRequest.onHeadersReceived.addListener(
+  function (details) {
+    details.responseHeaders.push({
+      name: 'Set-Cookie',
+      value: 'HtzPusr: yesplease'
+    });
+    return {responseHeaders: details.responseHeaders};
+  },
+  {
+    urls: ['http://*.haaretz.co.il/*']
+  },
+  [
+    'blocking',
+    'responseHeaders'
+  ]
+);
