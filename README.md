@@ -2,6 +2,8 @@
 
 A nefarious Chrome extension that easily bypasses the haaretz.co.il paywall.
 
+If things aren't working as expected, make sure to reinstall (update) the extension from time to time, to make sure you have the latest code.
+
 ## Install
 
 This extension can't be installed via the Google App Store since I couldn't care less about paying $5.00 and registering to work with it.

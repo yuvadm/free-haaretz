@@ -17,19 +17,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
   ]
 );
 
-chrome.webRequest.onHeadersReceived.addListener(
-  function (details) {
-    details.responseHeaders.push({
-      name: 'Set-Cookie',
-      value: 'HtzPusr: yesplease'
-    });
-    return {responseHeaders: details.responseHeaders};
-  },
-  {
-    urls: ['http://*.haaretz.co.il/*']
-  },
-  [
-    'blocking',
-    'responseHeaders'
-  ]
-);
+chrome.contentSettings.javascript.set({
+  primaryPattern: "http://*.haaretz.co.il/*",
+  setting: "block"
+})
