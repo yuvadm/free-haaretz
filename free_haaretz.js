@@ -9,7 +9,10 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     return {requestHeaders: details.requestHeaders};
   },
   {
-    urls: ['http://*.haaretz.co.il/*']
+    urls: [
+      'http://*.haaretz.co.il/*',
+      'http://*.haaretz.com/*',
+    ]
   },
   [
     'blocking',
