@@ -1,14 +1,14 @@
 # Free Haaretz (Firefox Edition)
 
-A nefarious Firefox extension that easily bypasses the Haaretz paywall.
+A nefarious Firefox add-on that easily bypasses the Haaretz paywall.
 
-If things aren't working as expected, make sure to reinstall (update) the extension from time to time, to make sure you have the latest code.
+If things aren't working as expected, make sure to reinstall (update) the add-on from time to time, to make sure you have the latest code.
 
 (Looking for the [Chrome version](https://github.com/yuvadm/free-haaretz)?)
 
 ## Install
 
- 1. Download the [extension XPI file](https://github.com/yuvadm/free-haaretz-ff/raw/master/free-haaretz.xpi)
+ 1. Download the [add-on XPI file](https://github.com/yuvadm/free-haaretz-ff/raw/master/free-haaretz.xpi)
 
  2. Go to the `Tools > Add-ons` menu
 
