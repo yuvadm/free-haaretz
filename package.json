@@ -1,9 +1,9 @@
 {
-  "name": "fffree-haaretz",
-  "title": "fffree-haaretz",
+  "name": "free-haaretz",
+  "title": "Free Haaretz",
   "id": "jid1-QL2xtvfKt4r4kA",
-  "description": "a basic add-on",
-  "author": "",
-  "license": "MPL 2.0",
+  "description": "A nefarious extension that easily bypasses the Haaretz paywall",
+  "author": "Yuval Adam",
+  "license": "Public Domain",
   "version": "0.1"
 }
