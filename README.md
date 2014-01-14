@@ -8,11 +8,18 @@ If things aren't working as expected, make sure to reinstall (update) the extens
 
 ## Install
 
- 1. Download the [extension ZIP file](https://github.com/yuvadm/free-haaretz-ff/archive/master.zip), also located on the right side bar.
+ 1. Download the [extension XPI file](https://github.com/yuvadm/free-haaretz-ff/raw/master/free-haaretz.xpi)
 
- 2. Unzip the file.
+ 2. Go to the `Tools > Add-ons` menu
 
- 3. ???
+ 3. Click the ⚙ button on the top
+
+ 4. Choose `Install Add-on From File`
+
+ 5. Select the XPI file you downloaded
+
+ 6. Click `Install Now`
+
 
 ## License
 
