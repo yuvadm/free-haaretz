@@ -4,6 +4,7 @@ A nefarious Firefox extension that easily bypasses the Haaretz paywall.
 
 If things aren't working as expected, make sure to reinstall (update) the extension from time to time, to make sure you have the latest code.
 
+(Looking for the [Chrome version](https://github.com/yuvadm/free-haaretz)?)
 
 ## Install
 
