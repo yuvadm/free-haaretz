@@ -1,3 +1,23 @@
+chrome.webRequest.onBeforeRequest.addListener(
+  function (details) {
+    var url_parts = details.url.split('?');
+    if (url_parts[1]) {
+      return {
+        redirectUrl: url_parts[0]
+      }
+    }
+  },
+  {
+    urls: [
+      'http://*.haaretz.co.il/*',
+      'http://*.haaretz.com/*',
+    ]
+  },
+  [
+    'blocking',
+  ]
+);
+
 chrome.webRequest.onBeforeSendHeaders.addListener(
   function (details) {
     for (var i = 0; i < details.requestHeaders.length; ++i) {
