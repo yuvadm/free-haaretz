@@ -6,7 +6,17 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
         break;
       }
     }
-    return {requestHeaders: details.requestHeaders};
+
+    if (details.url == 'http://www.haaretz.co.il/htz/js/bots.js') {
+      return {
+        requestHeaders: details.requestHeaders,
+        url: 'http://www.haaretz.co.il/htz/js/botzzzz.js'
+      }
+    }
+
+    return {
+      requestHeaders: details.requestHeaders
+    };
   },
   {
     urls: [
@@ -20,7 +30,4 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
   ]
 );
 
-chrome.contentSettings.javascript.set({
-  primaryPattern: "http://*.haaretz.co.il/*",
-  setting: "block"
-})
+
