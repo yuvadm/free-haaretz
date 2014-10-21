@@ -18,10 +18,11 @@ chrome.webRequest.onBeforeRequest.addListener(
   ]
 );
 
-var addresses = {
+var addresses = [
 	'http://hrz.haaretz.co.il/bots.js',
 	'http://www.haaretz.co.il/htz/js/bots.js'
-};
+];
+
 
 chrome.webRequest.onBeforeSendHeaders.addListener(
   function (details) {
@@ -32,7 +33,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
       }
     }
 
-    if (addresses[details.url]) {
+    if (addresses.indexOf(details.url) > -1) {
       return {
         requestHeaders: details.requestHeaders,
         url: 'http://www.haaretz.co.il/htz/js/botzzzz.js'
