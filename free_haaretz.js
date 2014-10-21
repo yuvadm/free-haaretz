@@ -18,6 +18,12 @@ chrome.webRequest.onBeforeRequest.addListener(
   ]
 );
 
+var addresses = [
+	'http://hrz.haaretz.co.il/bots.js',
+	'http://www.haaretz.co.il/htz/js/bots.js'
+];
+
+
 chrome.webRequest.onBeforeSendHeaders.addListener(
   function (details) {
     for (var i = 0; i < details.requestHeaders.length; ++i) {
@@ -27,7 +33,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
       }
     }
 
-    if (details.url == 'http://www.haaretz.co.il/htz/js/bots.js') {
+    if (addresses.indexOf(details.url) > -1) {
       return {
         requestHeaders: details.requestHeaders,
         url: 'http://www.haaretz.co.il/htz/js/botzzzz.js'
