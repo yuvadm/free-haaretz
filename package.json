@@ -1,9 +1,9 @@
 {
   "name": "free-haaretz",
   "title": "Free Haaretz",
-  "id": "jid1-QL2xtvfKt4r4kA",
   "description": "A nefarious extension that easily bypasses the Haaretz paywall",
   "author": "Yuval Adam",
   "license": "Public Domain",
-  "version": "0.4"
+  "version": "0.5",
+  "main": "lib/main"
 }
