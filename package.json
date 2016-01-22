@@ -5,5 +5,9 @@
   "author": "Yuval Adam",
   "license": "Public Domain",
   "version": "0.5",
-  "main": "lib/main"
+  "main": "lib/main",
+  "engines": {
+    "firefox": ">=38.0a1",
+    "fennec": ">=38.0a1"
+  }
 }
