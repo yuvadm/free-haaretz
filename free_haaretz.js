@@ -20,7 +20,9 @@ chrome.webRequest.onBeforeRequest.addListener(
 
 var addresses = [
   'http://hrz.haaretz.co.il/bots.js',
-  'http://www.haaretz.co.il/htz/js/bots.js'
+  'http://www.haaretz.co.il/htz/js/bots.js',
+  'http://www.haaretz.co.il/htz/js/resp/body_scripts/internal/plugins/adblock.js',
+  'http://www.haaretz.co.il/htz/js/resp/header_scripts/internal/util/z_adblockutil.js'
 ];
 
 
