@@ -12,15 +12,9 @@ Installation has to be done manually. I'm not interested in distributing this ex
 
  1. Download the [add-on XPI file](https://github.com/yuvadm/free-haaretz/releases/download/v0.9/free-haaretz.xpi)
 
- 2. Go to the `Tools > Add-ons` menu
-
- 3. Click the ⚙ button on the top
-
- 4. Choose `Install Add-on From File`
-
- 5. Select the XPI file you downloaded
-
- 6. Click `Install Now`
+ 2. Firefox should automatically identify the XPI file and request permission to install it.
+ 
+ 3. Click **Allow** and then **Install** to install the extension.
 
 ### Chrome / Chromium
 
@@ -36,7 +30,7 @@ Installation has to be done manually. I'm not interested in distributing this ex
 
  6. Navigate to the folder you unziped your code to, and select it.
 
- 7. The **FreeHaaretz** extension should now be loaded
+ 7. The **FreeHaaretz** extension should now be loaded.
 
 ## Troubleshooting
 
