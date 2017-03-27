@@ -21,7 +21,7 @@ chrome.webRequest.onBeforeRequest.addListener(
 chrome.webRequest.onBeforeSendHeaders.addListener(
   function (details) {
     for (var i = 0; i < details.requestHeaders.length; ++i) {
-      if (details.requestHeaders[i].name === 'User-Agent') {
+      if (details.requestHeaders[i].name.toLowerCase() === 'user-agent') {
         details.requestHeaders[i].value = 'Googlebot/2.1 (+http://www.googlebot.com/bot.html)';
         break;
       }
