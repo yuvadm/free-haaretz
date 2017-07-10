@@ -6,7 +6,13 @@ module.exports = function(config) {
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
-    browsers: ['ChromeHeadless'],
+    browsers: ['HeadlessChromeWithExtensions'],
+    customLaunchers: {
+      HeadlessChromeWithExtensions: {
+        base: 'ChromeHeadless',
+        flags: ['--disable-gpu', '--load-extension=.', '--remote-debugging-port=9222']
+      }
+    },
     autoWatch: false,
     concurrency: Infinity
   })

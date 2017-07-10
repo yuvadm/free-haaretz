@@ -1,12 +1,11 @@
 language: node_js
 node_js:
-        - "node"
+  - "node"
 sudo: false
 dist: trusty
 addons:
-        chrome: stable
-before_install:
-        - google-chrome-stable --headless --disable-gpu --load-extension=. --remote-debugging-port=9222 http://localhost &
+  chrome: stable
 install:
-        - npm install chrome-remote-interface
-
+  - yarn install
+script:
+  - yarn test
