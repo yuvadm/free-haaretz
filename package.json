@@ -3,19 +3,14 @@
   "version": "0.9.5",
   "description": "A nefarious extension that easily bypasses the Haaretz paywall",
   "main": "free_haaretz.js",
-  "dependencies": {
-    "chrome-remote-interface": "^0.24.1"
-  },
   "devDependencies": {
     "chai": "^4.0.2",
-    "karma": "^1.7.0",
-    "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^2.2.0",
-    "karma-mocha": "^1.3.0",
+    "chrome-launcher": "^0.3.1",
+    "chrome-remote-interface": "^0.24.1",
     "mocha": "^3.4.2"
   },
   "scripts": {
-    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js"
+    "test": "LIGHTHOUSE_CHROMIUM_PATH=/usr/bin/chromium mocha"
   },
   "repository": {
     "type": "git",
