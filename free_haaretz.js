@@ -11,6 +11,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     urls: [
       '*://*.haaretz.co.il/*',
       '*://*.haaretz.com/*',
+      '*://*.themarker.com/*',
     ]
   },
   [
@@ -35,6 +36,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     urls: [
       '*://*.haaretz.co.il/*',
       '*://*.haaretz.com/*',
+      '*://*.themarker.com/*',
     ]
   },
   [

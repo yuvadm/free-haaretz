@@ -1,6 +1,6 @@
 {
   "name": "Free Haaretz",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "manifest_version": 2,
   "description": "A nefarious extension that easily bypasses the Haaretz / TheMarker paywall",
   "homepage_url": "https://github.com/yuvadm/free-haaretz",
