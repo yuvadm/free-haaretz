@@ -10,7 +10,7 @@
     "mocha": "^3.4.2"
   },
   "scripts": {
-    "test": "LIGHTHOUSE_CHROMIUM_PATH=/usr/bin/chromium mocha"
+    "test": "LIGHTHOUSE_CHROMIUM_PATH=/usr/bin/chromium mocha --no-timeouts"
   },
   "repository": {
     "type": "git",

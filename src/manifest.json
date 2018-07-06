@@ -1,0 +1,22 @@
+{
+  "name": "Free Haaretz",
+  "version": "0.9.3",
+  "manifest_version": 2,
+  "description": "A nefarious extension that easily bypasses the Haaretz paywall",
+  "homepage_url": "http://github.com/yuvadm/free-haaretz",
+  "background": {
+    "scripts": ["free_haaretz.js"],
+    "persistent": true
+  },
+  "content_scripts": [{
+    "matches": ["*://*.haaretz.co.il/*"],
+    "css": ["free_haaretz.css"]
+  }],
+  "permissions": [
+    "contentSettings",
+    "webRequest",
+    "webRequestBlocking",
+    "http://*.haaretz.co.il/",
+    "http://*.haaretz.com/"
+  ]
+}

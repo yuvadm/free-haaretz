@@ -8,6 +8,7 @@ function launchChrome() {
     chromeFlags: [
       '--headless',
       '--disable-gpu',
+      //'--load-extension=src',
       '--no-sandbox'
     ]
   })
@@ -24,24 +25,31 @@ describe('test', () => {
             Network.enable(),
             Page.enable()
           ]).then(() => {
-            return Page.navigate({url: 'https://www.example.com'})
+            return Page.navigate({url: 'https://www.haaretz.co.il/news/world/america/.premium-1.4239672'})
+            //return Page.navigate({url: 'http://www.example.com'})
           }).catch((err) => {
+            client.close();
+            chrome.kill();
             done(err);
           })
 
           Page.loadEventFired(() => {
             Runtime.evaluate({expression: 'document.body.outerHTML'}).then((result) => {
               assert.include(result.result.value, 'coordination');
+              //assert.equal(1,1);
               client.close();
               chrome.kill();
               done();
             }).catch((err) => {
+              client.close();
+              chrome.kill();
               done(err);
             })
           })
 
         })
       }).catch(err => {
+        chrome.kill()
         done(err)
       })
     });
