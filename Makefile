@@ -4,7 +4,7 @@ bump:
 	sed -i 's/$(from)/$(to)/g' *
 
 package:
-	zip -r $(FILENAME).zip *
+	zip -0 -r $(FILENAME).zip *
 	cp $(FILENAME).zip $(FILENAME)-unsigned.xpi
 
 clean:

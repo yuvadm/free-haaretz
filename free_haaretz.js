@@ -9,8 +9,9 @@ chrome.webRequest.onBeforeRequest.addListener(
   },
   {
     urls: [
-      'http://*.haaretz.co.il/*',
-      'http://*.haaretz.com/*',
+      '*://*.haaretz.co.il/*',
+      '*://*.haaretz.com/*',
+      '*://*.themarker.com/*',
     ]
   },
   [
@@ -33,8 +34,9 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
   },
   {
     urls: [
-      'http://*.haaretz.co.il/*',
-      'http://*.haaretz.com/*',
+      '*://*.haaretz.co.il/*',
+      '*://*.haaretz.com/*',
+      '*://*.themarker.com/*',
     ]
   },
   [
