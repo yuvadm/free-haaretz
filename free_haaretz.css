@@ -4,3 +4,9 @@ section#header-reading-list {
 section#header-user-menu {
 	display: none;
 }
+#botspopup_wrapper{
+	display: none;
+}
+#botspopup {
+	display: none;
+}
