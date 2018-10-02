@@ -26,6 +26,16 @@ chrome.webRequest.onBeforeRequest.addListener(
   ]
 );
 
+chrome.webRequest.onBeforeRequest.addListener(
+  function (details) {
+    return {cancel: true};
+  },
+  {
+          urls: ["*://*/*inter*"]
+  },
+  ["blocking"]
+);
+
 chrome.webRequest.onBeforeSendHeaders.addListener(
   function (details) {
     for (var i = 0; i < details.requestHeaders.length; ++i) {
@@ -55,5 +65,3 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     'requestHeaders'
   ]
 );
-
-
