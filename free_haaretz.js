@@ -8,6 +8,12 @@ var USER_AGENTS = {
 chrome.webRequest.onBeforeRequest.addListener(
   function (details) {
     var url_parts = details.url.split('?');
+    
+    if(url_parts[0] == "https://www.haaretz.co.il/htz/js/inter.js" ||
+       url_parts[0] == "https://www.themarker.com/st/c/static/heb/inter.js" ) {
+      return {cancel: true};
+    }
+
     if (url_parts[1]) {
       return {
         redirectUrl: url_parts[0]
