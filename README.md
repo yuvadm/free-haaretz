@@ -10,7 +10,7 @@ Installation has to be done manually. I'm not interested in distributing this ex
 
 ### Firefox
 
- 1. Download the [add-on XPI file](https://github.com/yuvadm/free-haaretz/releases/download/v0.9.7/free-haaretz.xpi)
+ 1. Download the [add-on XPI file](https://github.com/hamavreg1983/free-haaretz/raw/master/releases/download/v0.9.8/free_haaretz.xpi)
 
  2. Firefox should automatically identify the XPI file and request permission to install it.
  
@@ -18,7 +18,7 @@ Installation has to be done manually. I'm not interested in distributing this ex
 
 ### Chrome / Chromium
 
- 1. Download the [extension ZIP file](https://github.com/yuvadm/free-haaretz/releases/download/v0.9.7/free-haaretz.zip)
+ 1. Download the [extension ZIP file](https://github.com/hamavreg1983/free-haaretz/raw/master/releases/download/v0.9.8/free-haaretz.zip)
 
  2. Unzip the file.
 
