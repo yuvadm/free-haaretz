@@ -10,7 +10,7 @@ Installation has to be done manually. I'm not interested in distributing this ex
 
 ### Firefox
 
- 1. Download the [add-on XPI file](https://github.com/hamavreg1983/free-haaretz/raw/master/releases/download/v0.9.8/free-haaretz-unsigned.xpi)
+ 1. Download the [add-on XPI file](https://github.com/hamavreg1983/free-haaretz/raw/master/releases/download/v0.9.8/free-haaretz.xpi)
 
  2. Firefox should automatically identify the XPI file and request permission to install it.
  
